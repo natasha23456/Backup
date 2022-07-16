@@ -1,20 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isupper.c                                       :+:      :+:    :+:   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nkidd <nkidd@student.42adel.org.au>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/15 23:10:18 by nkidd             #+#    #+#             */
-/*   Updated: 2022/07/16 17:38:25 by nkidd            ###   ########.fr       */
+/*   Created: 2022/07/16 19:08:55 by nkidd             #+#    #+#             */
+/*   Updated: 2022/07/16 19:19:33 by nkidd            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft"
+#include "libft.h"
 
-int ft_isupper(char character)
+int ft_isalnum(char c)
 {
-    if(character >= 'A' && character <= 'Z')
-        return (character);
-    return (0);
+    if(c == ft_isalpha || c == ft_isdigit)
+        return(c);
+    return(0);
 }

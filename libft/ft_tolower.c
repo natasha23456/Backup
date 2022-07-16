@@ -1,20 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isupper.c                                       :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nkidd <nkidd@student.42adel.org.au>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/15 23:10:18 by nkidd             #+#    #+#             */
-/*   Updated: 2022/07/16 17:38:25 by nkidd            ###   ########.fr       */
+/*   Created: 2022/07/16 19:44:53 by nkidd             #+#    #+#             */
+/*   Updated: 2022/07/16 19:47:42 by nkidd            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft"
+#include "libft.h"
 
-int ft_isupper(char character)
+int ft_tolower(char c)
 {
-    if(character >= 'A' && character <= 'Z')
-        return (character);
-    return (0);
+    if(ft_isupper(c))
+        return(c + 32);
+    return(c);
 }
+
